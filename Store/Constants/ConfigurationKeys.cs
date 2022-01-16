@@ -14,5 +14,10 @@
         /// The message-queue hostname key.
         /// </summary>
         public const string QueueHostName = "QueueHostName";
+
+        /// <summary>
+        /// The coffestore DB key.
+        /// </summary>
+        public const string CoffeeStoreDB = "CoffeeStoreDB";
     }
 }

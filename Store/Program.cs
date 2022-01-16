@@ -1,3 +1,4 @@
+using CoffeeStore.Constants;
 using CoffeeStore.Data;
 using CoffeeStore.Messaging;
 using Microsoft.EntityFrameworkCore;
@@ -5,7 +6,9 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<CoffeeStoreContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("CoffeeStoreDB")));
+builder.Services.AddDbContext<CoffeeStoreContext>(options => options
+                                                .UseSqlServer(builder.Configuration
+                                                .GetConnectionString(ConfigurationKeys.CoffeeStoreDB)));
 builder.Services.AddHostedService<CoffeeFactoryListener>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
