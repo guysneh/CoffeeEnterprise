@@ -1,8 +1,9 @@
-# CoffeeEnterprise (Written by Guy Sne (2022))
+# CoffeeEnterprise 
 Coffee Factory microservice and Coffee Store API
 
+Written by Guy Sne (2022)
 
-Instruction to get the Coffee Factory and the Coffee Store run on your local machine:
+**Instruction to get the Coffee Factory and the Coffee Store run on your local machine**
 
 1. Download and install RabbitMQ version 3.9.x  (make sure you run the installation with the admin account)
    you can use this link: https://rabbitmq.com/download.html
@@ -58,7 +59,7 @@ Instruction to get the Coffee Factory and the Coffee Store run on your local mac
 (you can run both projects independenly and in the order that you like)
 
 
-Test the projects:
+**Testing the projects**
 
 1) For the coffee factory: you should see the logs for the produced coffees on the terminal.
    Every log contain the id of the coffee and the date and time it was produced.
@@ -117,13 +118,11 @@ Test the projects:
           and the other customer will get a conflict(209) message (and no coffee from his/her request will be flagged as 'deleted' in the database).
 
 
-Deployment:
-	- I would use some cloud services for deploying the coffee 'enterprise'.
-          For example: AWS (Amazon Web Services):
-		 - the coffee store could be deployed as a Web Api or in lambda functions.
-                 - the RabbitMQ could be deployed as well(AWS work with them too ;) and we change the settings to be adapted to the new location
-		   (here is the place to say that in a real world scenario the implemation of the queue would be obviously more complex,
-		   therefore we would have to modify the source code as well)
-		 - We could use also use the DB services of AWS to deploy the Database.
-
-	- If the enterprise is used in an internal network we can also use some web server (for example IIS 10 in windows).
+**Deployment**
+	<br/><br/>
+	I would use some cloud services for deploying the coffee 'enterprise' for example AWS (Amazon Web Services):<br/>
+- the coffee store could be deployed as a Web Api or in lambda functions.
+- the RabbitMQ could be deployed as well. We would have to modify the settings in order adapted them to the new location of the queue etc..
+ (here is the place to say that in a real world scenario the implemation of the queue would be obviously more complex therefore we would have to modify the source code as well).
+- We could use also use the DB services of AWS to deploy the Database.
+- If the enterprise is used in an internal network we can also use some web server (for example IIS 10 in windows).
