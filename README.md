@@ -119,11 +119,12 @@ Test the projects:
 
 Deployment:
 	
-	I would use some cloud services for deploying the coffee 'enterprise'.
-        For example: AWS (Amazon Web Services) - the coffee store could be deployed as a Web Api or in lambda functions.
-                                               - the RabbitMQ could be deployed as well(AWS work with them too ;) and we change the settings to be adapted to the new location
-						 (here is the place to say that in a real world scenario the implemation of the queue would be obviously more complex,
-						  therefore we would have to modify the source code as well)
-					       - We could use also use the DB services of AWS to deploy the Database.
+	- I would use some cloud services for deploying the coffee 'enterprise'.
+          For example: AWS (Amazon Web Services):
+		 - the coffee store could be deployed as a Web Api or in lambda functions.
+                 - the RabbitMQ could be deployed as well(AWS work with them too ;) and we change the settings to be adapted to the new location
+		   (here is the place to say that in a real world scenario the implemation of the queue would be obviously more complex,
+		   therefore we would have to modify the source code as well)
+		 - We could use also use the DB services of AWS to deploy the Database.
 
-	If the enterprise is used in an internal network we can also use some web server (for example IIS 10 in windows).
+	- If the enterprise is used in an internal network we can also use some web server (for example IIS 10 in windows).
