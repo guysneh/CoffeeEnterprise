@@ -118,7 +118,6 @@ Test the projects:
 
 
 Deployment:
-	
 	- I would use some cloud services for deploying the coffee 'enterprise'.
           For example: AWS (Amazon Web Services):
 		 - the coffee store could be deployed as a Web Api or in lambda functions.
