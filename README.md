@@ -62,7 +62,7 @@ Written by Guy Sne (2022)
 **Testing the projects**
 
 1) For the coffee factory: you should see the logs for the produced coffees on the terminal.
-   Every log contain the id of the coffee and the date and time it was produced.
+   Every log entry contains the id of the coffee and the date and time it was produced.
 
 2) For the coffee store:
    Before you start it, you can let the coffee factory produce some coffees and stop it.
