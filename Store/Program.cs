@@ -11,7 +11,6 @@ builder.Services.AddDbContext<CoffeeStoreContext>(options => options
                                                 .GetConnectionString(ConfigurationKeys.CoffeeStoreDB)));
 builder.Services.AddHostedService<CoffeeFactoryListener>();
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
