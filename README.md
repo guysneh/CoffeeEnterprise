@@ -105,8 +105,8 @@ Test the projects:
 	- The body that should be added to the request should look like this:
 
 	{
-		"amount": <amount of coffees to buy>,
-		"customerName": "<customerName>"
+		"amount": (int),
+		"customerName": (string)
 	}
 
 	- Content-Type header should be: application/json
